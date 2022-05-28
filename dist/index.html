@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <title>PassKey Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h4 class="center-align">PassKey Generator</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class=" input-field col s12 m4 l3">
+                <select class="strength">
+                    <option value="" disabled selected>Choose Strength</option>
+                    <option value="weak">Weak</option>
+                    <option value="strong">Strong</option>
+                    <option value="secure">Secure</option>
+                    <option value="custom">Custom</option>
+                </select>
+                <label>Choose Strength</label>
+                <span class="helper-text"></span>
+            </div>
+            <div class="input-field col s12 m4 l3" style="display:none">
+                <input type="number" id="customLength">
+                <label for="customLength">Custom Length</label>
+                <span class="helper-text">Only numbers between 6 & 2048</span>
+            </div>
+            <div class=" input-field col s12 m4 l3">
+                <select class="type">
+                    <option value="" disabled selected>Choose Type</option>
+                    <option value="hex">Hex</option>
+                    <option value="base64">Base 64</option>
+                    <option value="url-safe">Url Safe</option>
+                    <option value="numeric">Numeric</option>
+                    <option value="distinguishable">Distinguishable</option>
+                    <option value="ascii-printable">ASCII Printable</option>
+                    <option value="alphanumeric">Alphanumeric</option>
+                    <option value="custom">Custom</option>
+                </select>
+                <label>Choose Type</label>
+                <span class="helper-text"></span>
+            </div>
+            <div class="input-field col s12 m4 l3" style="display:none">
+                <input type="text" id="customCharacters">
+                <label for="customCharacters">Custom Characters</label>
+                <span class="helper-text">Max 255 characters</span>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <input type="text" id="prefix">
+                <label for="prefix">Prefix</label>
+                <span class="helper-text"></span>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="text" id="suffix">
+                <label for="suffix">Suffix</label>
+                <span class="helper-text"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 ">
+                <div class="card teal darken-1 output">
+                    <div class="card-content white-text">
+                        <p class="generated-string"></p>
+                    </div>
+                    <div class="icons">
+                        <button class="btn-floating red btn-refresh"><span class="material-icons-outlined">
+                            refresh
+                            </span></button>
+                        <button class="btn-floating red btn-copy"><span class="material-icons-outlined">
+                            content_copy
+                            </span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <input type="text" id="quantity">
+                <label for="quantity">Quantity</label>
+                <div class="helper-text">Only numbers between 1 to 1000</div>
+                <div class="error-text red-text text-darken-2" style="display:none">Invalid number</div>
+            </div>
+            <div class="col s12 m12 l6">
+                <button class="btn teal darken-4 white-text btn-download btn-csv"><span class="material-icons-outlined">
+                    download
+                    </span> CSV</button>
+                <button class="btn teal darken-4 white-text btn-download btn-txt"><span class="material-icons-outlined">
+                    download
+                    </span> txt</button>
+                <button class="btn teal darken-4 white-text btn-download btn-json"><span class="material-icons-outlined">
+                    download
+                    </span> JSON</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <button class="btn btn-flat btn-more">More...</button>
+            </div>
+        </div>
+    </div>
+    <div class="cookie-policy">
+        <div class="card">
+            <div class="card-content">
+                Just so you know, this website uses cookies. <a href="https://cookiesandyou.com/" target="_blank">  What are cookies?</a>
+            </div>
+            <div class="card-action">
+                <button class="btn teal darken-4 white-text btn-close" data-close=".cookie-policy">Got It</button>
+              </div>
+        </div>
+    </div>
+
+    <div class="modal more bottom-sheet">
+        <div class="modal-content">
+           <div><strong>About PassKey</strong></div>
+            <p>
+                Passkey is an opensource software that can generate random/customized strings to secure an application, service or device. Select the combination as per preference to generate and copy PassKey.
+            </p>
+            <div><strong>Credits & Source</strong></div>  
+            <p>Built and maintained by <a href="https://www.iseedtechnologies.com" target="_blank">iseedtechnologies</a>.</p>
+            <p>The source code & documentation can be found at <a href="https://github.com/alaksandarjesus/PassKey-Generator">Github</a></p>
+            
+        </div>
+      </div>
+   
+    
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+import '../node_modules/materialize-css/dist/css/materialize.min.css';
+import 'toastr/build/toastr.css';
+import './style.css';
+import {Watch}  from './watch';
+import {Strength}  from './strength';
+import {Type}  from './type';
+import { Download } from './download';
+import { Close } from './close';
+import { More } from './more';
+new Watch();
+new Download();
+new Strength();
+new Type();
+new Close();
+new More();

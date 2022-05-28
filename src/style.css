@@ -1,0 +1,55 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.label--strength{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 8px;
+}
+.label--type{
+    margin-top: 8px;
+    display: flex;
+}
+.generated-string{
+    word-break: break-all;
+}
+.output{
+    position: relative;
+}
+.output .icons{
+    position:absolute;
+    right: -15px;
+    top: -20px;
+    z-index:1000;
+}
+.btn-copy span{
+    margin-top: 8px;
+}
+.btn-refresh span{
+    margin-top: 8px;
+}
+@media screen and (max-width:769px){
+    .btn-download{
+        margin-top: 10px;
+    }
+}
+.btn-download span{
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+#toast-container{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+.cookie-policy{
+    position:fixed;
+    z-index:1000;
+    right:8px;
+    bottom: 8px;
+    width: 400px;
+}
