@@ -1,5 +1,4 @@
 import '../node_modules/materialize-css/dist/css/materialize.min.css';
-import 'toastr/build/toastr.css';
 import './style.css';
 import {Watch}  from './watch';
 import {Strength}  from './strength';
