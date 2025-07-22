@@ -4,7 +4,7 @@
 
 PassKey is an opensource software to generate password, key to secure the application
 
-- [Demo](https://passkey-73c81.web.app/)
+- [Demo](https://passkeygenerator.web.app/)
 - [Based On](https://www.npmjs.com/package/crypto-random-string)
 - [Inspiration](https://passwordsgenerator.net)
 - [Issues](https://github.com/alaksandarjesus/PassKey-Generator/issues).
